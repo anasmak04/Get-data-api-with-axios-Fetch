@@ -1,5 +1,7 @@
 import './App.css';
 import axios from "axios";
+import Axios from "./components/Axios"
+import Fetch from "./components/Fetch"
 function App() {
 
   const btnsubmit = () => {
@@ -14,7 +16,7 @@ axios.get('https://jsonplaceholder.typicode.com/todos/1')
   }
   return (
     <div className="App">
-     <button onClick={btnsubmit}>click here to fetch data from api</button>
+    <Fetch />
     </div>
   );
 }
